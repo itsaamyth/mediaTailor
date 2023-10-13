@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Register from './Register';
+import ChannelCreate from './components/channelCreate/channelCreate';
 import { ToastContainer } from 'react-toastify';
 
 function App() {
@@ -9,11 +9,9 @@ function App() {
       <ToastContainer theme='colored' position='top-center'></ToastContainer>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Register/>}></Route>
+        <Route path='/' element={<ChannelCreate/>}></Route>
       </Routes>
-      
       </BrowserRouter>
-      
     </div>
   );
 }
