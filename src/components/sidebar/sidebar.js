@@ -1,9 +1,11 @@
 import React from "react";
+import { Link ,NavLink} from "react-router-dom";
+import './sidebar.css'
 
 const Sidebar = () => {
   return (
-    <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-      <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+    <div className="col-auto col-md-3 col-xl-2 bg-dark nav-div">
+      <div className="d-flex flex-column align-items-center align-items-sm-start pt-2 text-white min-vh-100">
         {/* <a
           href="/"
           className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
@@ -15,19 +17,13 @@ const Sidebar = () => {
           id="menu"
         >
           <li className="nav-item">
-            <a href="#" className="nav-link align-middle px-0">
-              <span className="ms-1 d-none d-sm-inline">Home</span>
-            </a>
+            <NavLink className="nav-link align-middle px-2" activeClassName="is-active" to="/">Home</NavLink>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link align-middle px-0">
-              <span className="ms-1 d-none d-sm-inline">Home</span>
-            </a>
+          <NavLink className="nav-link align-middle px-2" to="/channelCreate">Channel Creation</NavLink>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link align-middle px-0">
-              <span className="ms-1 d-none d-sm-inline">Home</span>
-            </a>
+          <NavLink className="nav-link align-middle px-2" to="/mediaTailor">Media Tailor</NavLink>
           </li>
         </ul>
       </div>

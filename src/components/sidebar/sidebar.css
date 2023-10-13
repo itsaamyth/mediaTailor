@@ -1,0 +1,13 @@
+.nav-div{
+    padding-left: unset !important;
+}
+.nav{
+    width: 100% !important;
+}
+.nav-item{
+    width: 100% !important;
+}
+.nav-link{
+    font-size: 18px !important;
+    padding-left: 10px !important;
+}
