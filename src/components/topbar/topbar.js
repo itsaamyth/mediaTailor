@@ -3,9 +3,9 @@ import './topbar.css'
 
 const Topbar=() =>{
   return (
-    <nav class="navbar bg-primary bg-body-tertiary">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">TVplus Content Engineering</span>
+    <nav className="navbar bg-primary bg-body-tertiary">
+    <div className="container-fluid">
+      <span className="navbar-brand mb-0 h1">TVplus Content Engineering</span>
     </div>
   </nav>
   )

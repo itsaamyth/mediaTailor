@@ -17,10 +17,10 @@ const Sidebar = () => {
           id="menu"
         >
           <li className="nav-item">
-            <NavLink className="nav-link align-middle px-2" activeClassName="is-active" to="/">Home</NavLink>
+            <NavLink className="nav-link align-middle px-2" activeclassname="is-active" to="/">Home</NavLink>
           </li>
           <li className="nav-item">
-          <NavLink className="nav-link align-middle px-2" to="/channelCreate">Channel Creation</NavLink>
+          <NavLink className="nav-link align-middle px-2" to="/channelCreateStatus">Channel Creation</NavLink>
           </li>
           <li className="nav-item">
           <NavLink className="nav-link align-middle px-2" to="/mediaTailor">Media Tailor</NavLink>

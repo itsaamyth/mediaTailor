@@ -4,6 +4,7 @@ import ChannelCreate from './components/channelCreate/channelCreate';
 import { ToastContainer } from 'react-toastify';
 import Home from './components/home/home';
 import MediaTailor from './components/mediaTailor/mediaTailor';
+import ChannelCreateStatus from './components/channelCreateStatus/channelCreateStatus';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
+      </Routes>
+      <Routes>
+        <Route path='/channelCreateStatus' element={<ChannelCreateStatus/>}></Route>
       </Routes>
       <Routes>
         <Route path='/channelCreate' element={<ChannelCreate/>}></Route>
