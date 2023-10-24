@@ -62,14 +62,14 @@ const ChannelCreateStatus = () => {
                           <div className="header-div">
                             <h4 className="title">Channel Status</h4>
                             <div>
-                              <div>
+                              {/* <div>
                                 {isLoading ? (
                                   <p>Loading...</p>
                                 ) : error ? (
                                   <p>Error: {error.message}</p>
                                 ) : (
                                   <div>
-                                  <table class="table table-striped table-hover">
+                                  <table className="table table-striped table-hover">
                                 <thead>
                                   <tr>
                                     <th scope="col">Country</th>
@@ -78,6 +78,7 @@ const ChannelCreateStatus = () => {
                                     <th scope="col">Completion Time</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">User Id</th>
+                                    <th scope="col">JSON Data</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -89,12 +90,45 @@ const ChannelCreateStatus = () => {
                                       <td>{item.completionTime}</td>
                                       <td>{item.status}</td>
                                       <td>{item.userId}</td>
+                                      <td><button type="button" className="btn btn-primary btn-sm">View JSON</button></td>
                                     </tr>
                                   ))}
                                 </tbody>
                               </table>
                                   </div>
                                 )}
+                              </div> */}
+                              <div>
+                                  <div>
+                                  <table className="table table-striped table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Country</th>
+                                    <th scope="col">Channel Name</th>
+                                    <th scope="col">Request Time</th>
+                                    <th scope="col">Completion Time</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">User Id</th>
+                                    <th scope="col">JSON Data</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr >
+                                      <th scope="row">India</th>
+                                      <td>Test Channel</td>
+                                      <td>123</td>
+                                      <td>456</td>
+                                      <td>True</td>
+                                      <td>123user</td>
+                                      <td>
+                                      {/* <Link to={`/viewJSON/${item.id}`}></Link> */}
+                                      <Link to={`/viewJSON/1`}>
+                                      <button type="button" className="btn btn-primary btn-sm">View JSON</button> </Link></td>
+                                    </tr>
+                                  
+                                </tbody>
+                              </table>
+                                  </div>
                               </div>
                             </div>
                           </div>

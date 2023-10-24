@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import Home from './components/home/home';
 import MediaTailor from './components/mediaTailor/mediaTailor';
 import ChannelCreateStatus from './components/channelCreateStatus/channelCreateStatus';
+import ViewJSON from './components/viewJSON/viewJSON';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path='/mediaTailor' element={<MediaTailor/>}></Route>
+      </Routes>
+      <Routes>
+        <Route path='/viewJSON/:id' element={<ViewJSON/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>
