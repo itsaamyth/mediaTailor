@@ -22,7 +22,7 @@ const ViewJSON = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        setJsonData(data);
+        setJsonData(data.response);
       })
       .catch((error) => {
         console.error("Error fetching JSON data:", error);
@@ -64,8 +64,7 @@ const ViewJSON = () => {
                             <h4 className="title">JSON Data</h4>
                             <div>
                               <div className="mt-2">
-                              {/* <pre>{JSON.stringify(jsonData, null, 2)}</pre> */}
-                                Hello JSON
+                              <pre>{JSON.stringify(jsonData, null, 2)}</pre>
                               </div>
                             </div>
                           </div>
