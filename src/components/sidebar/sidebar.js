@@ -11,7 +11,7 @@ const Sidebar = () => {
           id="menu"
         >
           <li className="nav-item">
-          <NavLink className="nav-link align-middle px-2" to="/">Media Tailor</NavLink>
+          <NavLink className="nav-link align-middle px-2" to="/mediaTailorStatus">Media Tailor</NavLink>
           </li>
         </ul>
       </div>

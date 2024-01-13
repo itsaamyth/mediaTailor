@@ -15,7 +15,7 @@ function App() {
         <Route path='/mediaTailorDownload' element={<MediaTailorConfigFetch/>}></Route>
       </Routes>
       <Routes>
-        <Route path='/' element={<MTStatus/>}></Route>
+        <Route path='/mediaTailorStatus' element={<MTStatus/>}></Route>
       </Routes>
 
       </BrowserRouter>
