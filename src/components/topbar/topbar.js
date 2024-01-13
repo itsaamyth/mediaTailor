@@ -3,7 +3,7 @@ import './topbar.css'
 
 const Topbar=() =>{
   return (
-    <nav className="navbar bg-primary bg-body-tertiary">
+    <nav className="navbar bg-primary">
     <div className="container-fluid">
       <span className="navbar-brand mb-0 h1">TVplus Content Engineering</span>
     </div>
@@ -12,4 +12,3 @@ const Topbar=() =>{
 }
 
 export default Topbar
-

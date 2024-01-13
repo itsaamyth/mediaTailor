@@ -1,0 +1,145 @@
+.mt-download-div{
+  margin-left: 8% !important;
+}
+.card-body{
+  padding: unset !important;
+}
+.card-body-element{
+display: flex;
+justify-content: space-between;
+}
+.left-div{
+  background: #0D6EFD;
+  padding: 20px !important;
+}
+.card-topbar{
+  padding: 10px !important;
+  border-radius: 5px;
+}
+.card-topbar .navbar-brand{
+  padding: 10px !important;
+  font-size: 22px !important;
+  /* background: white; */
+  color: white !important;
+  /* border-radius: 5px; */
+}
+.page-title{
+  text-align: center;
+  color: #0D6EFD;
+  font-weight: 500;
+  position: relative;
+  top: 10%;
+  background: white;
+  border-radius: 8px;
+  font-size: 25px;
+  padding: 10px;
+}
+.title{
+  margin-bottom: 0px !important;
+}
+.subtitle{
+  font-weight: 400;
+}
+.right-div{
+  padding: 30px !important;
+  padding-top: 10px !important;
+}
+.form-div{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.form-div-card{
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.header-div{
+  padding-bottom: 20px;
+}
+.mt-download-btn-div{
+  display: flex !important;
+  justify-content: end !important;
+  margin-right: 20px;
+}
+.mt-download-btn{
+  /* width: 30% !important; */
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+label{
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.imp-mark{
+  color: red !important;
+}
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282C34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61DAFB;
+}
+.errmsg{
+  color: red;
+}
+.header{
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  padding: 1%;
+}
+a{
+  text-decoration: none !important;
+  color: white !important;
+  padding: 2px;
+}
+app-check{
+  height: 20px;
+  width: 20px;
+  margin: 1%;
+}
+.header{
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  padding: 1%;
+}
+a{
+  text-decoration: none !important;
+  color: white !important;
+  padding: 2px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

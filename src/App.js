@@ -1,32 +1,23 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ChannelCreate from './components/channelCreate/channelCreate';
-import { ToastContainer } from 'react-toastify';
-import Home from './components/home/home';
-import MediaTailor from './components/mediaTailor/mediaTailor';
-import ChannelCreateStatus from './components/channelCreateStatus/channelCreateStatus';
-import ViewJSON from './components/viewJSON/viewJSON';
+import MTStatus from './components/mediaTailorStatus/mediaTailorStatus';
+import ViewConfig from './components/viewConfig/viewConfig';
+import MediaTailorConfigFetch from './components/mediaTailor/mediaTailorDownload';
 
 function App() {
   return (
     <div className="App">
-      <ToastContainer theme='colored' position='top-center'></ToastContainer>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
+        <Route path='/viewConfig/:jobID/:callerRefID' element={<ViewConfig/>}></Route>
       </Routes>
       <Routes>
-        <Route path='/channelCreateStatus' element={<ChannelCreateStatus/>}></Route>
+        <Route path='/mediaTailorDownload' element={<MediaTailorConfigFetch/>}></Route>
       </Routes>
       <Routes>
-        <Route path='/channelCreate' element={<ChannelCreate/>}></Route>
+        <Route path='/' element={<MTStatus/>}></Route>
       </Routes>
-      <Routes>
-        <Route path='/mediaTailor' element={<MediaTailor/>}></Route>
-      </Routes>
-      <Routes>
-        <Route path='/viewJSON/:id' element={<ViewJSON/>}></Route>
-      </Routes>
+
       </BrowserRouter>
     </div>
   );
